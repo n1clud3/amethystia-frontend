@@ -12,28 +12,31 @@ defineProps(['currentLocation', 'homeButtonAction', 'apiButtonAction']);
   </nav>
 </template>
 
-<style lang="scss">
+<style>
 nav {
-  background-color: whitesmoke;
-  padding: 1em;
+  background-color: rgb(255, 244, 253);
+  padding: 1rem;
   margin-bottom: 1rem;
+}
 
-  .buttons {
-    transition: 150ms ease;
-    :hover {
-      background-color: aquamarine;
-    }
+.buttons {
+  padding: 0.5rem;
+}
 
-    button {
-      padding: 0.5rem;
-      background-color: rgb(219, 219, 219);
-      border: none;
-      font-size: 16px;
-    }
-  }
+.current_location {
+  margin: 0.5rem;
+}
 
-  .current_location {
-    margin: 0.5rem;
-  }
+button {
+  padding: 0.5rem;
+  background-color: rgb(255, 221, 252);
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  transition: all 150ms ease-in-out;
+}
+
+button:hover {
+  background: rgb(255, 127, 202);
 }
 </style>

@@ -3,6 +3,7 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import NavBar from './components/NavBar.vue';
 import Footer from './components/Footer.vue';
+import Home from './pages/Home.vue';
 
 import {ref} from 'vue';
 
@@ -23,11 +24,7 @@ const navApiButtonAction = (() => {
     :homeButtonAction="navHomeButtonAction"
     :apiButtonAction="navApiButtonAction"
   />
-  <main>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Beatae quidem facilis fuga ipsum adipisci, eum accusamus minus illo!
-    Accusamus dolore alias ex ab, iure unde nihil facilis in incidunt saepe?
-  </main>
+  <Home/>
   <Footer/>
 </template>
 
@@ -43,12 +40,5 @@ body {
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-main {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 50rem;
-  //padding: 1rem;
 }
 </style>
